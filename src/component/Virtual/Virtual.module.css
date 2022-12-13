@@ -1,0 +1,40 @@
+.Virtual{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.left>:nth-child(1){
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left>:nth-child(2){
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 20rem;
+}
+.left>:nth-child(3){
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+}
+.left>img{
+    position: relative;
+    width: 10rem;
+    bottom: 3rem;
+}
+
+.wrapper{
+    width: 30rem;
+}
