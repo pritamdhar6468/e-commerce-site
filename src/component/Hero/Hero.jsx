@@ -1,12 +1,14 @@
 import React from 'react'
 import css from './Hero.module.css'
 import HeroImg from '../../assets/hero.png'
-import {RiShoppingBagFill} from 'react-icons/ri'
-import {BsArrowRight} from 'react-icons/bs'
-const Hero=()=>{
-    return(
+import { RiShoppingBagFill } from 'react-icons/ri'
+import { BsArrowRight } from 'react-icons/bs'
+import { motion } from 'framer-motion'
+const Hero = () => {
+    const transition = { duration: 3, type: "spring" }
+    return (
         <div className={css.container}>
-              { /*left side*/}
+            { /*left side*/}
             <div className={css.h_sides}>
                 <span className={css.text1}>Skin protection cream</span>
                 <div className={css.text2}>
@@ -16,20 +18,34 @@ const Hero=()=>{
 
             </div>
             { /*middle side*/}
-           <div className={css.wrapper}>
-                <div className={css.blueCircle}></div>
-                <img src={HeroImg} alt="" width={600} />
-                <div className={css.cart2}>
-                    <RiShoppingBagFill/>
+            <div className={css.wrapper}>
+                <motion.div
+                    initial={{ bottom: "2rem" }}
+                    whileInView={{ bottom: "0rem" }}
+                    className={css.blueCircle}
+                    transition={transition}></motion.div>
+
+
+                <motion.img
+                 transition={transition}  initial={{ bottom: "-2rem" }}
+                 whileInView={{ bottom: "0rem" }}
+                 src={HeroImg} alt="" width={600} />
+
+
+                <motion.div 
+                 transition={transition}  initial={{ right: "4%" }}
+                 whileInView={{ right: "2%" }} className={css.cart2}>
+                    <RiShoppingBagFill />
+
                     <div className={css.signup}>
                         <span>Best Signup offers</span>
                         <div>
-                            <BsArrowRight/>
+                            <BsArrowRight />
                         </div>
                     </div>
-                </div>
-           </div>
-           { /*right side*/}
+                </motion.div>
+            </div>
+            { /*right side*/}
             <div className={css.h_sides}>
                 <div className={css.traffic}>
                     <span>1.5m</span>
@@ -41,6 +57,6 @@ const Hero=()=>{
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 export default Hero;
