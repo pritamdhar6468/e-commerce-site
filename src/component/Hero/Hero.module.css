@@ -137,10 +137,10 @@
     }
     .container{
         grid-template-areas: 
-        'left center center'
-        'right right right';
+        "left center center"
+        "right right right";
     }
-    .container>:nth-child(1){
+    .container>:first-child{
         grid-area: left;
         grid-template-rows: none;
         gap: 8rem;

@@ -27,14 +27,17 @@ const Hero = () => {
 
 
                 <motion.img
-                 transition={transition}  initial={{ bottom: "-2rem" }}
+                 transition={transition}  
+                 initial={{ bottom: "-2rem" }}
                  whileInView={{ bottom: "0rem" }}
                  src={HeroImg} alt="" width={600} />
 
 
                 <motion.div 
-                 transition={transition}  initial={{ right: "4%" }}
-                 whileInView={{ right: "2%" }} className={css.cart2}>
+                 transition={transition} 
+                  initial={{ right: "4%" }}
+                  whileInView={{ right: "2%" }}
+                  className={css.cart2}>
                     <RiShoppingBagFill />
 
                     <div className={css.signup}>

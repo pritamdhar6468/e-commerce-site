@@ -55,3 +55,21 @@
     width: 6rem;
     height: 11rem;
 }
+
+
+@media  screen and (max-width:856px){
+    .container{
+        gap: 1rem;
+
+   }
+   .container:nth-child(1){
+    display: none;
+   }
+   .products{
+    grid-template-columns: none;
+    gap: 1rem;
+   }
+   .menu{
+    flex-direction: row;
+   }
+}
