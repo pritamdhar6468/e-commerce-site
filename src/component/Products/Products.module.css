@@ -73,3 +73,15 @@
     flex-direction: row;
    }
 }
+@media  screen and (max-width:640px){
+    .menu{
+        margin-left: -2rem ;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .container{
+        text-align: center;
+    }
+}

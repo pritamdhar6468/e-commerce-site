@@ -4,15 +4,15 @@ import Logo from '../../assets/logo.png'
 import {CgShoppingBag} from 'react-icons/cg'
 import {GoThreeBars} from 'react-icons/go'
 const Header = () =>{
-    const[ShowMenu,setShowMenu] =useState(true);
+    const[ShowMenu,setShowMenu] = useState(true)
 
     const toggleMenu=()=>{
-        setShowMenu=((ShowMenu)=>!ShowMenu)
+        setShowMenu=((ShowMenu)=>!ShowMenu);
     }
     return (
         <div className={css.container}>
             <div className={css.logo}>
-                <img src={Logo} alt="" srcset="" />
+                <img src={Logo} alt="" />
                 <span>amazon</span>
             </div>
             <div className={css.right}>
@@ -36,7 +36,7 @@ const Header = () =>{
 
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

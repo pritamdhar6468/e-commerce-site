@@ -127,7 +127,7 @@
         text-align: left;
     }
     .blueCircle{
-        position: absolute;
+        position: relative ;
         width: 70%;
         height: 100%;
     }
@@ -153,5 +153,23 @@
         display: flex;
         justify-content: space-around;
         margin: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width:640px){
+    .blueCircle{
+        top: 0;
+        width: 16rem;
+        height: 72%;
+    }
+    .wrapper>img{
+        top: 3rem;
+        width: 12rem;
+        height: 15rem;
+    }
+    .cart2{
+        transform: scale(.7);
+        right: -2rem;
+        bottom: 0;
     }
 }

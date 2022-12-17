@@ -71,7 +71,7 @@
     .menu{
         flex-direction: column;
         margin-left: -2rem;
-        display: none;
+        /* display: none; */
     }
     .bars{
         display: block;
